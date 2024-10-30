@@ -1,0 +1,677 @@
+-- PAISES
+INSERT INTO Paises (nombre) VALUES
+('Argentina'),
+('Brasil'),
+('Uruguay')
+
+
+-- DEPARTAMENTOS
+-- Departamentos Argentina
+INSERT INTO Departamentos (nombre) VALUES ('Buenos Aires');
+INSERT INTO Departamentos (nombre) VALUES ('Córdoba');
+INSERT INTO Departamentos (nombre) VALUES ('Mendoza');
+INSERT INTO Departamentos (nombre) VALUES ('Santa Fe');
+INSERT INTO Departamentos (nombre) VALUES ('Tucumán');
+
+-- Departamentos Brasil
+INSERT INTO Departamentos (nombre) VALUES ('São Paulo');
+INSERT INTO Departamentos (nombre) VALUES ('Rio de Janeiro');
+INSERT INTO Departamentos (nombre) VALUES ('Minas Gerais');
+INSERT INTO Departamentos (nombre) VALUES ('Bahía');
+INSERT INTO Departamentos (nombre) VALUES ('Paraná');
+
+
+-- Departamentos Uruguay
+INSERT INTO Departamentos (nombre) VALUES ('Montevideo');
+INSERT INTO Departamentos (nombre) VALUES ('Canelones');
+INSERT INTO Departamentos (nombre) VALUES ('Maldonado');
+INSERT INTO Departamentos (nombre) VALUES ('Colonia');
+INSERT INTO Departamentos (nombre) VALUES ('Salto');
+
+
+-- TERMINALES
+-- Terminales Argentina
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (1, 'Terminal de Buenos Aires');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (1, 'Terminal de Retiro');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (2, 'Terminal de Córdoba');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (2, 'Terminal de Villa Carlos Paz');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (3, 'Terminal de Mendoza');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (3, 'Terminal de Godoy Cruz');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (4, 'Terminal de Santa Fe');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (4, 'Terminal de Rosario');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (5, 'Terminal de Tucumán');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (5, 'Terminal de San Miguel de Tucumán');
+
+-- Terminales Brasil
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (6, 'Terminal de São Paulo');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (6, 'Terminal Tietê');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (7, 'Terminal de Río de Janeiro');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (7, 'Terminal Novo Rio');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (8, 'Terminal de Minas Gerais');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (8, 'Terminal de Belo Horizonte');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (9, 'Terminal de Bahía');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (9, 'Terminal de Salvador');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (10, 'Terminal de Paraná');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (10, 'Terminal de Curitiba');
+
+
+-- Terminales Uruguay
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (11, 'Terminal de Montevideo');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (11, 'Terminal Tres Cruces');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (12, 'Terminal de Canelones');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (12, 'Terminal de La Paz');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (13, 'Terminal de Maldonado');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (13, 'Terminal de Punta del Este');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (14, 'Terminal de Colonia');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (14, 'Terminal de Carmelo');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (15, 'Terminal de Salto');
+INSERT INTO Terminales (idDepartamento, nombre) VALUES (15, 'Terminal de Paysandú');
+
+
+-- BUSES
+INSERT INTO Buses (marca, tipo, capacidad) VALUES ('Mercedes-Benz', 'Bus Ejecutivo', 30);
+INSERT INTO Buses (marca, tipo, capacidad) VALUES ('Volvo', 'Bus de Lujo', 25);
+INSERT INTO Buses (marca, tipo, capacidad) VALUES ('Toyota', 'Bus Normal', 30);
+INSERT INTO Buses (marca, tipo, capacidad) VALUES ('Nissan', 'Microbus', 20);
+INSERT INTO Buses (marca, tipo, capacidad) VALUES ('Chevrolet', 'Bus Escolar', 40);
+
+
+-- ASIENTOS
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 1, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 1, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 2, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 2, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 3, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 3, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 4, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 4, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 5, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 5, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 6, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 6, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 7, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 7, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 8, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 8, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 9, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 9, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 10, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (1, 10, 'B');
+
+-- Asientos para el Bus Volvo (25 asientos)
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 1, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 1, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 2, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 2, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 3, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 3, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 4, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 4, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 5, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 5, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 6, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 6, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 7, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 7, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 8, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 8, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 9, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (2, 9, 'B');
+
+-- Asientos para el Bus Toyota (30 asientos)
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 1, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 1, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 2, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 2, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 3, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 3, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 4, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 4, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 5, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 5, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 6, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 6, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 7, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 7, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 8, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 8, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 9, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 9, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 10, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (3, 10, 'B');
+
+-- Asientos para el Bus Nissan (20 asientos)
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 1, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 1, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 2, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 2, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 3, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 3, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 4, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 4, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 5, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 5, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 6, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 6, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 7, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 7, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 8, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (4, 8, 'B');
+
+-- Asientos para el Bus Chevrolet (40 asientos)
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 1, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 1, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 2, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 2, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 3, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 3, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 4, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 4, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 5, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 5, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 6, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 6, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 7, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 7, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 8, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 8, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 9, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 9, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 10, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 10, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 11, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 11, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 12, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 12, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 13, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 13, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 14, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 14, 'B');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 15, 'A');
+INSERT INTO Asientos (idBuses, nroFila, letra) VALUES (5, 15, 'B');
+
+
+-- TURISTAS
+INSERT INTO Turistas (nombre, primerApellido, segundoApellido, tipoDocumento, numeroDocumento, fechaNacimiento, correoElectronico, contraseña, idPais)
+VALUES
+('Juan', 'Pérez', 'Gómez', 'DNI', '12345678', '1990-01-15', 'juan.perez@example.com', 'contraseña123', 1),
+('María', 'López', 'Hernández', 'Pasaporte', 'A1234567', '1985-05-20', 'maria.lopez@example.com', 'contraseña456', 2),
+('Pedro', 'García', 'Martínez', 'DNI', '87654321', '1992-03-30', 'pedro.garcia@example.com', 'contraseña789', 3),
+('Ana', 'Fernández', 'Sánchez', 'Pasaporte', 'B7654321', '1988-11-11', 'ana.fernandez@example.com', 'contraseña101', 1),
+('Luis', 'Martín', 'Rodríguez', 'DNI', '11223344', '1991-02-12', 'luis.martin@example.com', 'contraseña202', 1),
+('Laura', 'Jiménez', 'Ramírez', 'Pasaporte', 'C9876543', '1983-07-07', 'laura.jimenez@example.com', 'contraseña303', 2),
+('Carlos', 'Torres', 'Vásquez', 'DNI', '55667788', '1995-08-25', 'carlos.torres@example.com', 'contraseña404', 3),
+('Sofía', 'Morales', 'Cruz', 'Pasaporte', 'D1234567', '1994-09-15', 'sofia.morales@example.com', 'contraseña505', 1),
+('Diego', 'Reyes', 'Ortega', 'DNI', '99887766', '1987-04-04', 'diego.reyes@example.com', 'contraseña606', 3),
+('Carmen', 'Mendoza', 'Núñez', 'Pasaporte', 'E7654321', '1993-06-18', 'carmen.mendoza@example.com', 'contraseña707', 2),
+('Andrés', 'Castro', 'Salas', 'DNI', '223344556', '1989-12-01', 'andres.castro@example.com', 'contraseña808', 3),
+('Isabel', 'Vega', 'Almeida', 'Pasaporte', 'F6543210', '1996-10-30', 'isabel.vega@example.com', 'contraseña909', 1),
+('Fernando', 'Paredes', 'Ríos', 'DNI', '88990011', '1990-05-05', 'fernando.paredes@example.com', 'contraseña010', 2),
+('Paola', 'Ceballos', 'León', 'Pasaporte', 'G1234567', '1984-03-03', 'paola.ceballos@example.com', 'contraseña111', 2),
+('Roberto', 'Salinas', 'Figueroa', 'DNI', '44455566', '1997-11-11', 'roberto.salinas@example.com', 'contraseña212', 3),
+('Lucía', 'Castillo', 'Moya', 'Pasaporte', 'H7654321', '1991-09-29', 'lucia.castillo@example.com', 'contraseña313', 1),
+('Hugo', 'Alvarado', 'Marín', 'DNI', '33221100', '1995-07-25', 'hugo.alvarado@example.com', 'contraseña414', 1),
+('Marisol', 'Aguirre', 'Rivas', 'Pasaporte', 'I9876543', '1986-06-06', 'marisol.aguirre@example.com', 'contraseña515', 2),
+('Guillermo', 'Pinto', 'Cárdenas', 'DNI', '99884422', '1988-02-02', 'guillermo.pinto@example.com', 'contraseña616', 3),
+('Gabriela', 'Rojas', 'Salas', 'Pasaporte', 'J6543210', '1994-10-10', 'gabriela.rojas@example.com', 'contraseña717', 2),
+('Javier', 'Moreno', 'López', 'DNI', '77665544', '1990-12-12', 'javier.moreno@example.com', 'contraseña818', 1),
+('Vanessa', 'Arce', 'Núñez', 'Pasaporte', 'K1234567', '1983-03-25', 'vanessa.arce@example.com', 'contraseña919', 2),
+('Arturo', 'Zapata', 'Quintero', 'DNI', '55778899', '1997-05-18', 'arturo.zapata@example.com', 'contraseña020', 3),
+('Elena', 'Cáceres', 'Sánchez', 'Pasaporte', 'L7654321', '1995-08-30', 'elena.caceres@example.com', 'contraseña121', 3),
+('Cristian', 'Bermúdez', 'Acosta', 'DNI', '33221199', '1992-07-07', 'cristian.bermudez@example.com', 'contraseña222', 1),
+('Silvia', 'González', 'Téllez', 'Pasaporte', 'M9876543', '1989-10-15', 'silvia.gonzalez@example.com', 'contraseña323', 2),
+('Mauricio', 'Peña', 'Salazar', 'DNI', '44556677', '1991-01-01', 'mauricio.pena@example.com', 'contraseña424', 3),
+('Natalia', 'Medina', 'Serrano', 'Pasaporte', 'N1234567', '1984-09-22', 'natalia.medina@example.com', 'contraseña525', 1),
+('Felipe', 'Soto', 'Pizarro', 'DNI', '66889900', '1993-06-12', 'felipe.soto@example.com', 'contraseña626', 1),
+('Susana', 'Alfaro', 'Vega', 'Pasaporte', 'O7654321', '1996-02-20', 'susana.alfaro@example.com', 'contraseña727', 2),
+('Esteban', 'Salinas', 'Fuentes', 'DNI', '11002233', '1987-11-11', 'esteban.salinas@example.com', 'contraseña828', 3),
+('Tatiana', 'Riviera', 'Marquez', 'Pasaporte', 'P9876543', '1988-08-08', 'tatiana.riviera@example.com', 'contraseña929', 2),
+('Rafael', 'Núñez', 'Montoya', 'DNI', '33445566', '1995-07-25', 'rafael.nunez@example.com', 'contraseña030', 1),
+('Laura', 'Cervantes', 'Paredes', 'Pasaporte', 'Q1234567', '1994-04-04', 'laura.cervantes@example.com', 'contraseña131', 2),
+('Alejandro', 'Alonso', 'González', 'DNI', '77889900', '1983-03-03', 'alejandro.alonso@example.com', 'contraseña232', 3),
+('Jazmín', 'Villanueva', 'Soto', 'Pasaporte', 'R9876543', '1990-10-10', 'jazmin.villanueva@example.com', 'contraseña333', 3),
+('Ricardo', 'Aguilar', 'Salinas', 'DNI', '22334455', '1989-06-06', 'ricardo.aguilar@example.com', 'contraseña434', 1),
+('Verónica', 'Valenzuela', 'Cárdenas', 'Pasaporte', 'S7654321', '1996-02-15', 'veronica.valenzuela@example.com', 'contraseña535', 1),
+('Nicolás', 'Cruz', 'Sierra', 'DNI', '66778899', '1985-11-30', 'nicolas.cruz@example.com', 'contraseña636', 2),
+('Samantha', 'Guevara', 'Benítez', 'Pasaporte', 'T1234567', '1993-08-28', 'samantha.guevara@example.com', 'contraseña737', 3),
+('Eduardo', 'Ponce', 'Ríos', 'DNI', '112233454', '1992-04-04', 'eduardo.ponce@example.com', 'contraseña838', 2),
+('Patricia', 'Roldán', 'Aguirre', 'Pasaporte', 'U9876543', '1988-05-15', 'patricia.roldan@example.com', 'contraseña939', 1),
+('Pedro','Fulanito','Sultano','DNI','12345687','1996-05-16','soyturista@gmail.com','contraseña123',1);
+
+
+-- Turistas_Telefonos
+-- Insertar dos teléfonos para cada turista
+INSERT INTO Turistas_Telefonos(idPasajero, telefono) VALUES (1, '1111111111');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (1, '2222222222');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (2, '3333333333');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (2, '4444444444');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (3, '5555555555');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (3, '6666666666');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (4, '7777777777');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (4, '8888888888');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (5, '9999999999');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (5, '1010101010');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (6, '1112131414');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (6, '1516171818');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (7, '1920212222');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (7, '2324252626');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (8, '2728293030');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (8, '3132333434');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (9, '3536373838');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (9, '3940414242');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (10, '4344454646');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (10, '4748495050');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (11, '5152535454');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (11, '5556575858');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (12, '5960616262');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (12, '6364656666');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (13, '6768697070');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (13, '7172737474');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (14, '7576777878');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (14, '7980818282');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (15, '8384858686');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (15, '8788899090');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (16, '9192939494');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (16, '9596979898');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (17, '9910101112');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (17, '1213141516');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (18, '1718192021');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (18, '2122232425');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (19, '2627282930');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (19, '3132333434');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (20, '3536373838');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (20, '3940414242');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (21, '4344454646');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (21, '4748495050');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (22, '5152535454');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (22, '5556575858');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (23, '5960616262');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (23, '6364656666');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (24, '6768697070');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (24, '7172737474');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (25, '7576777878');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (25, '7980818282');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (26, '8384858686');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (26, '8788899090');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (27, '9192939494');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (27, '9596979898');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (28, '9910101112');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (28, '1213141516');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (29, '1718192021');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (29, '2122232425');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (30, '2627282930');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (30, '3132333434');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (31, '3536373838');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (31, '3940414242');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (32, '4344454646');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (32, '4748495050');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (33, '5152535454');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (33, '5556575858');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (34, '5960616262');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (34, '6364656666');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (35, '6768697070');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (35, '7172737474');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (36, '7576777878');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (36, '7980818282');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (37, '8384858686');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (37, '8788899090');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (38, '9192939494');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (38, '9596979898');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (39, '9910101112');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (39, '1213141516');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (40, '1718192021');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (40, '2122232425');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (41, '2627282930');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (41, '3132333434');
+
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (42, '3536373838');
+INSERT INTO Turistas_Telefonos (idPasajero, telefono) VALUES (42, '3940414242');
+
+
+-- Mercosures
+-- Insertar mercosures con descuentos variados en el pasaje
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (1, 5.50);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (2, 10.75);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (3, 15.25);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (4, 7.50);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (5, 12.00);
+
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (6, 8.80);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (7, 14.60);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (8, 11.90);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (9, 6.25);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (10, 18.40);
+
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (11, 9.99);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (12, 13.30);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (13, 17.80);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (14, 10.10);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (15, 16.55);
+
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (16, 5.90);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (17, 19.00);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (18, 8.25);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (19, 14.75);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (20, 11.20);
+
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (21, 6.80);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (22, 15.60);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (23, 12.90);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (24, 17.10);
+INSERT INTO Mercosures (idPasajero, descuentoPasaje) VALUES (25, 9.45);
+
+
+-- Mercosures_Beneficios
+INSERT INTO Mercosures_Beneficios (idPasajero, beneficio) VALUES
+(1, 'Descuento del 15% en pasajes nacionales'),
+(2, 'Acceso a salón VIP en el aeropuerto'),
+(3, 'Transporte gratuito al hotel'),
+(4, 'Descuento del 20% en el próximo viaje'),
+(5, 'Regalo de una botella de agua en el bus'),
+(6, 'Asiento preferente sin costo adicional'),
+(7, 'Descuento del 10% en alimentos a bordo'),
+(8, 'Acceso a Wi-Fi gratis durante el viaje'),
+(9, 'Prioridad en el embarque y desembarque'),
+(10, 'Regalo de un snack gratuito en el terminal'),
+(11, 'Descuento del 25% en pasajes de grupo'),
+(12, 'Tarjeta de membresía para viajes futuros'),
+(13, 'Asiento reclinable en el bus'),
+(14, 'Descuento del 5% en servicios adicionales'),
+(15, 'Regalo de un pasaje para un acompañante'),
+(16, 'Descuento del 30% en pasajes aéreos'),
+(17, 'Acceso a un programa de recompensas'),
+(18, 'Descuento en la compra de souvenirs'),
+(19, 'Mejoras en el asiento de forma gratuita'),
+(20, 'Descuento en servicios de transporte terrestre'),
+(21, 'Acceso a información exclusiva sobre destinos'),
+(22, 'Regalo de un mapa turístico gratuito'),
+(23, 'Descuento del 10% en paquetes turísticos'),
+(24, 'Invitación a eventos exclusivos'),
+(25, 'Descuento en la compra de billetes de tren');
+
+
+-- No_Mercosures
+INSERT INTO No_Mercosures (idPasajero)
+VALUES 
+(26),
+(27),
+(28),
+(29),
+(30),
+(31),
+(32),
+(33),
+(34),
+(35),
+(36),
+(37),
+(38),
+(39),
+(40),
+(41),
+(42)
+
+
+-- DESTINOS
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) 
+VALUES ('Viaje a Córdoba desde Buenos Aires', 120, '08:30', '2024-11-01', 1500, 1, 3, 'Terminal de Buenos Aires', 'Terminal de Córdoba', 1, 2, '2024-11-01');
+
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) 
+VALUES ('Viaje a Mendoza desde Retiro', 180, '09:00', '2024-11-02', 2500, 2, 5, 'Terminal de Retiro', 'Terminal de Mendoza', 1, 3, '2024-11-02');
+
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) 
+VALUES ('Viaje a Rosario desde Córdoba', 90, '10:00', '2024-11-03', 1200, 3, 8, 'Terminal de Córdoba', 'Terminal de Rosario', 2, 4, '2024-11-03');
+
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) 
+VALUES ('Viaje a Río de Janeiro desde São Paulo', 120, '07:30', '2024-11-06', 2000, 11, 13, 'Terminal de São Paulo', 'Terminal de Río de Janeiro', 6, 7, '2024-11-06');
+
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) 
+VALUES ('Viaje a Salvador desde Belo Horizonte', 180, '09:00', '2024-11-07', 2200, 16, 18, 'Terminal de Belo Horizonte', 'Terminal de Salvador', 8, 9, '2024-11-07');
+
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) 
+VALUES ('Viaje a Curitiba desde Tietê', 150, '10:30', '2024-11-08', 1300, 12, 20, 'Terminal Tietê', 'Terminal de Curitiba', 6, 10, '2024-11-08');
+
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) 
+VALUES ('Viaje a Paraná desde Novo Rio', 240, '11:00', '2024-11-09', 1900, 14, 19, 'Terminal Novo Rio', 'Terminal de Paraná', 7, 10, '2024-11-09');
+
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) 
+VALUES ('Viaje a Minas Gerais desde Salvador', 300, '13:30', '2024-11-10', 1700, 18, 15, 'Terminal de Salvador', 'Terminal de Minas Gerais', 9, 8, '2024-11-10');
+
+INSERT INTO Destinos (infoGral, duracion, horaSalida, fecha, importe, idTerminalOrigen, idTerminalDestino, nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, fechaViaje) VALUES 
+('Viaje de Montevideo a Canelones', 30, '08:00', '2024-11-01', 150.00, 21, 23, 'Terminal de Montevideo', 'Terminal de Canelones', 11, 12, '2024-11-01'),
+('Viaje de Canelones a Maldonado', 60, '09:30', '2024-11-02', 250.00, 23, 25, 'Terminal de Canelones', 'Terminal de Maldonado', 12, 13, '2024-11-02'),
+('Viaje de Maldonado a Montevideo', 90, '10:15', '2024-11-03', 300.00, 25, 21, 'Terminal de Maldonado', 'Terminal de Montevideo', 13, 11, '2024-11-03'),
+('Viaje de Colonia a Salto', 120, '11:00', '2024-11-04', 400.00, 27, 29, 'Terminal de Colonia', 'Terminal de Salto', 14, 15, '2024-11-04'),
+('Viaje de Salto a Montevideo', 150, '12:45', '2024-11-05', 450.00, 29, 21, 'Terminal de Salto', 'Terminal de Montevideo', 15, 11, '2024-11-05'),
+('Viaje de Santa Fe a Canelones', 120, '08:45', '2024-11-06', 1200, 7, 23, 'Terminal de Santa Fe', 'Terminal de Canelones', 4, 12, '2024-11-06'),
+('Viaje de Montevideo a Villa Carlos Paz', 240, '12:30', '2024-11-07', 2200, 21, 4, 'Terminal de Montevideo', 'Terminal de Villa Carlos Paz', 11, 2, '2024-11-07'),
+('Viaje de Córdoba a Curitiba', 180, '09:00', '2024-11-08', 1700, 3, 20, 'Terminal de Córdoba', 'Terminal de Curitiba', 2, 10, '2024-11-08'),
+('Viaje de Paysandú a La Paz', 90, '10:15', '2024-11-09', 800, 30, 24, 'Terminal de Paysandú', 'Terminal de La Paz', 15, 12, '2024-11-09'),
+('Viaje de Minas Gerais a Rosario', 300, '07:00', '2024-11-10', 3200, 15, 8, 'Terminal de Minas Gerais', 'Terminal de Rosario', 8, 4, '2024-11-10'),
+('Viaje de Carmelo a Belo Horizonte', 210, '14:30', '2024-11-11', 2500, 28, 16, 'Terminal de Carmelo', 'Terminal de Belo Horizonte', 14, 8, '2024-11-11'),
+('Viaje de Bahía a San Miguel de Tucumán', 270, '16:00', '2024-11-12', 2700, 17, 10, 'Terminal de Bahía', 'Terminal de San Miguel de Tucumán', 9, 5, '2024-11-12'),
+('Viaje de Tres Cruces a Punta del Este', 90, '18:45', '2024-11-13', 950, 22, 26, 'Terminal Tres Cruces', 'Terminal de Punta del Este', 11, 13, '2024-11-13'),
+('Viaje de Paraná a Salvador', 180, '13:00', '2024-11-14', 2100, 19, 18, 'Terminal de Paraná', 'Terminal de Salvador', 10, 9, '2024-11-14'),
+('Viaje de Montevideo a Río de Janeiro', 300, '06:00', '2024-11-15', 3500, 21, 13, 'Terminal de Montevideo', 'Terminal de Río de Janeiro', 11, 7, '2024-11-15'),
+('Viaje de Canelones a Buenos Aires', 120, '10:30', '2024-11-16', 1800, 23, 1, 'Terminal de Canelones', 'Terminal de Buenos Aires', 12, 1, '2024-11-16'),
+('Viaje de Retiro a Colonia', 150, '11:45', '2024-11-17', 2400, 2, 27, 'Terminal de Retiro', 'Terminal de Colonia', 1, 14, '2024-11-17'),
+('Viaje de La Paz a São Paulo', 210, '12:15', '2024-11-18', 2600, 24, 11, 'Terminal de La Paz', 'Terminal de São Paulo', 12, 6, '2024-11-18'),
+('Viaje de Tietê a Salto', 330, '05:30', '2024-11-19', 3700, 12, 29, 'Terminal Tietê', 'Terminal de Salto', 6, 15, '2024-11-19'),
+('Viaje de Rosario a Belo Horizonte', 240, '14:00', '2024-11-20', 3200, 8, 16, 'Terminal de Rosario', 'Terminal de Belo Horizonte', 4, 8, '2024-11-20'),
+('Viaje a Córdoba desde Buenos Aires', 120, '08:30', '2015-11-01', 1500, 1, 3, 'Terminal de Buenos Aires', 'Terminal de Córdoba', 1, 2, '2015-11-01'),
+('Viaje a Mendoza desde Retiro', 180, '09:00', '2015-11-02', 2500, 2, 5, 'Terminal de Retiro', 'Terminal de Mendoza', 1, 3, '2015-11-02'),
+('Viaje a Rosario desde Córdoba', 90, '10:00', '2015-11-03', 1200, 3, 8, 'Terminal de Córdoba', 'Terminal de Rosario', 2, 4, '2015-11-03'),
+('Viaje a Río de Janeiro desde São Paulo', 120, '07:30', '2016-11-06', 2000, 11, 13, 'Terminal de São Paulo', 'Terminal de Río de Janeiro', 6, 7, '2016-11-06'),
+('Viaje a Salvador desde Belo Horizonte', 180, '09:00', '2016-11-07', 2200, 16, 18, 'Terminal de Belo Horizonte', 'Terminal de Salvador', 8, 9, '2016-11-07'),
+('Viaje a Curitiba desde Tietê', 150, '10:30', '2016-11-08', 1300, 12, 20, 'Terminal Tietê', 'Terminal de Curitiba', 6, 10, '2016-11-08'),
+('Viaje a Paraná desde Novo Rio', 240, '11:00', '2017-11-09', 1900, 14, 19, 'Terminal Novo Rio', 'Terminal de Paraná', 7, 10, '2017-11-09'),
+('Viaje a Minas Gerais desde Salvador', 300, '13:30', '2017-11-10', 1700, 18, 15, 'Terminal de Salvador', 'Terminal de Minas Gerais', 9, 8, '2017-11-10'),
+('Viaje de Montevideo a Canelones', 30, '08:00', '2018-11-01', 150.00, 21, 23, 'Terminal de Montevideo', 'Terminal de Canelones', 11, 12, '2018-11-01'),
+('Viaje de Canelones a Maldonado', 60, '09:30', '2018-11-02', 250.00, 23, 25, 'Terminal de Canelones', 'Terminal de Maldonado', 12, 13, '2018-11-02'),
+('Viaje de Maldonado a Montevideo', 90, '10:15', '2018-11-03', 300.00, 25, 21, 'Terminal de Maldonado', 'Terminal de Montevideo', 13, 11, '2018-11-03'),
+('Viaje de Colonia a Salto', 120, '11:00', '2018-11-04', 400.00, 27, 29, 'Terminal de Colonia', 'Terminal de Salto', 14, 15, '2018-11-04'),
+('Viaje de Salto a Montevideo', 150, '12:45', '2018-11-05', 450.00, 29, 21, 'Terminal de Salto', 'Terminal de Montevideo', 15, 11, '2018-11-05'),
+('Viaje de Santa Fe a Canelones', 120, '08:45', '2019-11-06', 1200, 7, 23, 'Terminal de Santa Fe', 'Terminal de Canelones', 4, 12, '2019-11-06'),
+('Viaje de Montevideo a Villa Carlos Paz', 240, '12:30', '2019-11-07', 2200, 21, 4, 'Terminal de Montevideo', 'Terminal de Villa Carlos Paz', 11, 2, '2019-11-07'),
+('Viaje de Córdoba a Curitiba', 180, '09:00', '2019-11-08', 1700, 3, 20, 'Terminal de Córdoba', 'Terminal de Curitiba', 2, 10, '2019-11-08'),
+('Viaje de Paysandú a La Paz', 90, '10:15', '2019-11-09', 800, 30, 24, 'Terminal de Paysandú', 'Terminal de La Paz', 15, 12, '2019-11-09'),
+('Viaje de Minas Gerais a Rosario', 300, '07:00', '2019-11-10', 3200, 15, 8, 'Terminal de Minas Gerais', 'Terminal de Rosario', 8, 4, '2019-11-10'),
+('Viaje de Carmelo a Belo Horizonte', 210, '14:30', '2015-11-11', 2500, 28, 16, 'Terminal de Carmelo', 'Terminal de Belo Horizonte', 14, 8, '2015-11-11'),
+('Viaje de Bahía a San Miguel de Tucumán', 270, '16:00', '2015-11-12', 2700, 17, 10, 'Terminal de Bahía', 'Terminal de San Miguel de Tucumán', 9, 5, '2015-11-12'),
+('Viaje de Tres Cruces a Punta del Este', 90, '18:45', '2015-11-13', 950, 22, 26, 'Terminal Tres Cruces', 'Terminal de Punta del Este', 11, 13, '2015-11-13'),
+('Viaje de Paraná a Salvador', 180, '13:00', '2016-11-14', 2100, 19, 18, 'Terminal de Paraná', 'Terminal de Salvador', 10, 9, '2016-11-14'),
+('Viaje de Montevideo a Río de Janeiro', 300, '06:00', '2016-11-15', 3500, 21, 13, 'Terminal de Montevideo', 'Terminal de Río de Janeiro', 11, 7, '2016-11-15'),
+('Viaje de Canelones a Buenos Aires', 120, '10:30', '2017-11-16', 1800, 23, 1, 'Terminal de Canelones', 'Terminal de Buenos Aires', 12, 1, '2017-11-16'),
+('Viaje de Retiro a Colonia', 150, '11:45', '2018-11-17', 2400, 2, 27, 'Terminal de Retiro', 'Terminal de Colonia', 1, 14, '2018-11-17'),
+('Viaje de La Paz a São Paulo', 210, '12:15', '2019-11-18', 2600, 24, 11, 'Terminal de La Paz', 'Terminal de São Paulo', 12, 6, '2019-11-18'),
+('Viaje de Tietê a Salto', 330, '05:30', '2019-11-19', 3700, 12, 29, 'Terminal Tietê', 'Terminal de Salto', 6, 15, '2019-11-19');
+
+SET IDENTITY_INSERT [Obligatorio_Empresa_Buses].[dbo].[Destinos] ON;
+INSERT INTO [Obligatorio_Empresa_Buses].[dbo].[Destinos] 
+    ([id], [infoGral], [duracion], [horaSalida], [fecha], [importe], 
+     [idTerminalOrigen], [idTerminalDestino], [nombreTerminalOrigen], 
+     [nombreTerminalDestino], [idDepartamentoTerminalOrigen], 
+     [idDepartamentoTerminalDestino], [fechaViaje])
+VALUES 
+    (255, 'Viaje de Rosario a Belo Horizonte', 
+240, '14:00', '2019-11-20', 3200, 8, 16, 
+'Terminal de Rosario', 'Terminal de Belo Horizonte', 4, 8, '2019-11-20');
+SET IDENTITY_INSERT [Obligatorio_Empresa_Buses].[dbo].[Destinos] OFF;
+
+
+-- PASAJES
+INSERT INTO Pasajes (fueUtilizado, fecha, idDestino, idPasajero, fechaCompra, idBus, nroFila, letra) VALUES
+(0, '2024-11-02', 1, 1, '2024-11-02', 1, 1, 'A'),
+(0, '2024-11-02', 1, 2, '2024-11-03', 1, 1, 'B'),
+(0, '2024-11-03', 2, 3, '2024-11-06', 1, 2, 'A'),
+(0, '2024-11-03', 2, 4, '2024-10-07', 1, 2, 'B'),
+(0, '2024-11-06', 3, 5, '2024-11-08', 1, 3, 'A'),
+(0, '2024-11-06', 3, 6, '2024-11-09', 1, 3, 'B'),
+(0, '2024-11-07', 4, 7, '2024-11-10', 1, 4, 'A'),
+(0, '2024-11-07', 4, 8, '2024-11-11', 1, 4, 'B'),
+(0, '2024-11-08', 5, 9, '2024-11-12', 1, 5, 'A'),
+(0, '2024-11-08', 5, 10, '2024-11-03', 1, 5, 'B'),
+(0, '2024-11-09', 6, 11, '2024-11-04', 2, 1, 'A'),
+(0, '2024-11-09', 6, 12, '2024-11-05', 2, 1, 'B'),
+(0, '2024-11-10', 7, 13, '2024-11-01', 2, 2, 'A'),
+(0, '2024-11-10', 7, 14, '2024-11-01', 2, 2, 'B'),
+(0, '2024-11-01', 8, 15, '2024-11-01', 2, 3, 'A'),
+(0, '2024-11-04', 11, 21, '2024-11-01', 4, 1, 'A'),
+(0, '2024-11-04', 11, 22, '2024-11-01', 4, 1, 'B'),
+(0, '2024-11-05', 12, 23, '2024-11-01', 4, 2, 'A'),
+(0, '2024-11-05', 12, 24, '2024-11-01', 4, 2, 'B'),
+(0, '2024-11-15', 1, 15, '2024-10-15', 1, 5, 'A'),
+(1, '2024-11-16', 2, 16, '2024-10-16', 2, 6, 'B'),
+(0, '2024-11-17', 3, 17, '2024-10-17', 3, 7, 'A'),
+(0, '2024-11-18', 1, 25, '2024-11-18', 1, 1, 'A'),
+(0, '2024-11-19', 1, 26, '2024-11-19', 1, 1, 'B'),
+(0, '2024-11-20', 2, 27, '2024-11-20', 1, 2, 'A'),
+(0, '2024-11-21', 2, 28, '2024-11-21', 1, 2, 'B'),
+(0, '2024-11-22', 3, 29, '2024-11-22', 1, 3, 'A'),
+(0, '2024-11-23', 3, 30, '2024-11-23', 1, 3, 'B'),
+(0, '2024-11-24', 4, 31, '2024-11-24', 1, 4, 'A'),
+(0, '2024-11-25', 4, 32, '2024-11-25', 1, 4, 'B'),
+(0, '2024-11-26', 5, 33, '2024-11-26', 1, 5, 'A'),
+(0, '2024-11-27', 5, 34, '2024-11-27', 1, 5, 'B'),
+(0, '2024-11-28', 6, 35, '2024-11-28', 2, 1, 'A'),
+(0, '2024-11-29', 6, 36, '2024-11-29', 2, 1, 'B'),
+(0, '2024-12-06', 12, 41, '2024-12-06', 4, 2, 'B'),
+(0, '2024-12-07', 1, 33, '2024-12-07', 1, 5, 'A'),
+(1, '2024-12-08', 2, 31, '2024-12-08', 2, 6, 'B'),
+(0, '2024-12-09', 3, 32, '2024-12-09', 3, 7, 'A'),
+(0, '2024-12-10', 4, 35, '2024-12-10', 3, 7, 'B'),
+(0, '2024-12-11', 5, 4, '2024-12-11', 1, 1, 'A'),
+(0, '2024-12-12', 6, 4, '2024-12-12', 1, 1, 'B'),
+(0, '2024-12-13', 7, 3, '2024-12-13', 1, 2, 'A'),
+(0, '2024-12-14', 8, 2, '2024-12-14', 1, 2, 'B'),
+(0, '2024-12-16', 8, 25, '2024-12-16', 1, 3, 'B'),
+(0, '2024-12-17', 7, 13, '2024-12-17', 1, 4, 'A'),
+(0, '2024-12-18', 6, 31, '2024-12-18', 1, 4, 'B'),
+(0, '2024-12-19', 1, 36, '2024-12-19', 1, 5, 'A'),
+(0, '2024-12-20', 2, 35, '2024-12-20', 2, 6, 'B'),
+(0, '2024-12-21', 3, 42, '2024-12-21', 3, 7, 'A'),
+(0, '2024-12-22', 4, 10, '2024-12-22', 3, 7, 'B'),
+(0, '2024-12-23', 5, 25, '2024-12-23', 1, 1, 'A'),
+(0, '2024-12-24', 6, 24, '2024-12-24', 1, 1, 'B'),
+(0, '2024-12-25', 7, 26, '2024-12-25', 1, 2, 'A'),
+(0, '2024-12-26', 8, 27, '2024-12-26', 1, 2, 'B'),
+(0, '2024-12-28', 4, 29, '2024-12-28', 1, 3, 'B'),
+(0, '2024-12-29', 5, 2, '2024-12-29', 1, 4, 'A'),
+(0, '2024-12-30', 6, 30, '2024-12-30', 1, 4, 'B'),
+(0, '2024-12-31', 1, 5, '2024-12-31', 1, 5, 'A'),
+(1, '2025-01-01', 2, 6, '2025-01-01', 2, 6, 'B'),
+(0, '2025-01-02', 3, 7, '2025-01-02', 3, 7, 'A'),
+(0, '2025-01-03', 4, 3, '2025-01-03', 3, 7, 'B'),
+(0, '2025-01-04', 5, 3, '2025-01-04', 1, 1, 'A'),
+(0, '2025-01-05', 6, 2, '2025-01-05', 1, 1, 'B'),
+(0, '2025-01-06', 7, 1, '2025-01-06', 1, 2, 'A'),
+(0, '2025-01-07', 8, 2, '2025-01-07', 1, 2, 'B'),
+(0, '2025-01-09', 3, 25, '2025-01-09', 1, 3, 'B'),
+(0, '2025-01-10', 2, 8, '2025-01-10', 1, 4, 'A'),
+(0, '2025-01-11', 1, 18, '2025-01-11', 1, 4, 'B'),
+(0, '2025-01-12', 1, 39, '2025-01-12', 1, 5, 'A'),
+(0, '2025-01-13', 2, 40, '2025-01-13', 2, 6, 'B'),
+(0, '2025-01-14', 3, 41, '2025-01-14', 3, 7, 'A'),
+(0, '2025-01-15', 4, 42, '2025-01-15', 3, 7, 'B'),
+(0,'2025-01-15',4,2,'2025-01-15',3,7,'B'),
+(0,'2025-01-15',4,2,'2025-01-17',3,7,'B'),
+(1,'2025-01-15',4,3,'2025-01-15',3,7,'B'),
+(1,'2025-01-15',4,3,'2025-01-17',3,7,'B'),
+(1,'2025-01-15'	,255,3,'2025-01-17',3,7,'B'),
+(1,'2025-01-15'	,255,4,'2025-01-17',3,7,'B'),
+(1,'2025-01-15'	,255,5,'2025-01-17',3,7,'B'),
+(0,'2024-09-10',2,43,'2017-09-10',2,3,'B'),
+(0,'2024-09-10',2,43,'2017-09-10',2,3,'A'),
+(0,'2024-09-10',2,43,'2017-09-10',2,3,'B'),
+(0,'2024-09-10',3,43,'2017-09-10',2,3,'B');
+
+Insert Into Pasajes(fueUtilizado,fecha,idDestino,idPasajero,fechaCompra,idBus,nroFila,letra)
+VALUES(1,'2017-09-10',1,43,'2017-08-10',1,1,'A');
+Insert Into Pasajes(fueUtilizado,fecha,idDestino,idPasajero,fechaCompra,idBus,nroFila,letra)
+VALUES(1,'2017-09-11',1,43,'2017-08-10',1,1,'A');
+Insert Into Pasajes(fueUtilizado,fecha,idDestino,idPasajero,fechaCompra,idBus,nroFila,letra)
+VALUES(1,'2017-09-18',1,43,'2017-08-12',1,1,'A');
+Insert Into Pasajes(fueUtilizado,fecha,idDestino,idPasajero,fechaCompra,idBus,nroFila,letra)
+VALUES(1,'2017-09-20',1,43,'2017-08-15',1,1,'A');
+
+-- OrigenesDestinos
+INSERT INTO [Obligatorio_Empresa_Buses].[dbo].[OrigenesDestinos] 
+([idOrigen], [idDestino], [nombreTerminalOrigen], [nombreTerminalDestino], [idDepartamentoTerminalOrigen], [idDepartamentoTerminalDestino])VALUES
+(1, 3, 'Terminal de Buenos Aires', 'Terminal de Córdoba', 1, 2),
+(2, 5, 'Terminal de Retiro', 'Terminal de Mendoza', 1, 3),
+(3, 8, 'Terminal de Córdoba', 'Terminal de Rosario', 2, 4),
+(11, 13, 'Terminal de São Paulo', 'Terminal de Río de Janeiro', 6, 7),
+(16, 18, 'Terminal de Belo Horizonte', 'Terminal de Salvador', 8, 9),
+(12, 20, 'Terminal Tietê', 'Terminal de Curitiba', 6, 10),
+(14, 19, 'Terminal Novo Rio', 'Terminal de Paraná', 7, 10),
+(18, 15, 'Terminal de Salvador', 'Terminal de Minas Gerais', 9,8),
+(21, 23, 'Terminal de Montevideo', 'Terminal de Canelones', 11, 12),
+(23, 25, 'Terminal de Canelones', 'Terminal de Maldonado', 12,13),
+(25, 21, 'Terminal de Maldonado', 'Terminal de Montevideo', 13, 11),
+(27, 29, 'Terminal de Colonia', 'Terminal de Salto', 14, 15),
+(29, 21, 'Terminal de Salto', 'Terminal de Montevideo', 15, 11);
+
+
+-- DestinoTerminal_Buses
+INSERT INTO DestinoTerminal_Buses (idTerminalOrigen, idTerminalDestino, 
+nombreTerminalOrigen, nombreTerminalDestino, idDepartamentoTerminalOrigen, idDepartamentoTerminalDestino, idDestino, idBus) VALUES
+(1, 3, 'Terminal de Buenos Aires', 'Terminal de Córdoba', 1, 2, 1, 1),
+(1, 5, 'Terminal de Buenos Aires', 'Terminal de Mendoza', 1, 3, 2, 2),
+(2, 8, 'Terminal de Retiro', 'Terminal de Rosario', 1, 4, 3, 3),
+(3, 7, 'Terminal de Córdoba', 'Terminal de Santa Fe', 2, 4, 4, 4),
+(4, 9, 'Terminal de Villa Carlos Paz', 'Terminal de Tucumán', 2, 5, 5, 5),
+(5, 10, 'Terminal de Mendoza', 'Terminal de San Miguel de Tucumán', 3, 5, 6, 1),
+(6, 21, 'Terminal de Godoy Cruz', 'Terminal de Montevideo', 3, 11, 7, 2),
+(7, 24, 'Terminal de Santa Fe', 'Terminal de La Paz', 4, 12, 8, 3),
+(8, 26, 'Terminal de Rosario', 'Terminal de Punta del Este', 4, 13, 8, 4),
+(9, 28, 'Terminal de Tucumán', 'Terminal de Carmelo', 5, 14, 8, 5),
+(10, 30, 'Terminal de San Miguel de Tucumán', 'Terminal de Paysandú', 5, 15, 6, 1),
+(21, 12, 'Terminal de Montevideo', 'Terminal Tietê', 11, 6, 1, 2),
+(24, 13, 'Terminal de La Paz', 'Terminal de Río de Janeiro', 12, 7, 3, 3),
+(26, 18, 'Terminal de Punta del Este', 'Terminal de Salvador', 13, 9, 4, 4),
+(30, 20, 'Terminal de Paysandú', 'Terminal de Curitiba', 15, 10, 7, 1),
+(12, 1, 'Terminal Tietê', 'Terminal de Buenos Aires', 6, 1, 6, 2),
+(13, 2, 'Terminal de Río de Janeiro', 'Terminal de Retiro', 7, 1, 8, 3),
+(18, 3, 'Terminal de Salvador', 'Terminal de Córdoba', 9, 2, 7, 4),
+(22, 4, 'Terminal Tres Cruces', 'Terminal de Villa Carlos Paz', 11, 2, 3, 5),
+(28, 19, 'Terminal de Carmelo', 'Terminal de Paraná', 14, 10, 6, 5);
